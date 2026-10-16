@@ -26,8 +26,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <a href="#home" className="logo" onClick={() => setOpen(false)}>
-          <span className="logo-mark" aria-hidden="true">✦</span>
-          {company.name}
+          <img src="/logo.png" alt={company.name} width="720" height="248" />
         </a>
 
         <nav className={`nav ${open ? "nav-open" : ""}`} aria-label="Main">

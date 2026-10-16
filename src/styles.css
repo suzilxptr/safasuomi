@@ -13,6 +13,7 @@
   --border: #e2e8f0;
   --radius: 16px;
   --header-h: 64px;
+  --sag: 22px;
   --gutter: 1.25rem;
   --shadow: 0 10px 30px -12px rgba(11, 27, 43, .18);
   --font-body: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -75,12 +76,8 @@ p { margin: 0 0 1em; }
   animation: slide-down .6s var(--ease) both;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: var(--header-h); gap: .75rem; }
-.logo { display: flex; align-items: center; gap: .5rem; min-width: 0; font-family: var(--font-head); font-weight: 800; font-size: 1.2rem; color: var(--ink); text-decoration: none; letter-spacing: -.02em; }
-.logo-mark {
-  flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; font-size: .95rem; color: #fff;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark)); box-shadow: 0 6px 14px -4px rgba(13, 148, 136, .6);
-  transition: transform .5s var(--ease);
-}
+.logo { display: flex; align-items: center; min-width: 0; text-decoration: none; }
+.logo img { display: block; height: 34px; width: auto; transition: transform .4s var(--ease); }
 .header-actions { display: flex; align-items: center; gap: .25rem; }
 
 .lang-switch { display: flex; padding: 3px; background: #f1f5f9; border-radius: 999px; }
@@ -117,7 +114,6 @@ p { margin: 0 0 1em; }
 
 /* Hero */
 .hero {
-  --sag: 22px;
   --sky-h: clamp(110px, 22svh, 170px);
   position: relative; overflow: hidden; isolation: isolate;
   color: #fff; text-align: center;
@@ -288,7 +284,7 @@ p { margin: 0 0 1em; }
 
 /* Hover effects only where hover exists, so touch devices don't get stuck states */
 @media (hover: hover) {
-  .logo:hover .logo-mark { transform: rotate(180deg) scale(1.08); }
+  .logo:hover img { transform: scale(1.04); }
   .nav a:hover { color: var(--primary-dark); }
   .btn:hover:not(:disabled) { transform: translateY(-2px); }
   .btn-primary:hover:not(:disabled) { box-shadow: 0 14px 28px -8px rgba(13, 148, 136, .85); }
@@ -313,8 +309,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 359px) {
   :root { --gutter: 1rem; }
   .header-inner { gap: .5rem; }
-  .logo { font-size: 1.05rem; gap: .4rem; }
-  .logo-mark { width: 30px; height: 30px; }
+  .logo img { height: 28px; }
   .lang-switch button { min-width: 38px; padding: 0 .5rem; }
   .menu-toggle { width: 40px; }
   .menu-toggle span { left: 9px; }
@@ -322,12 +317,12 @@ p { margin: 0 0 1em; }
 
 /* Small tablets */
 @media (min-width: 600px) {
-  :root { --gutter: 2rem; }
+  :root { --gutter: 2rem; --sag: 30px; }
   .section { padding: 4.5rem 0; }
   .grid { gap: 1.25rem; margin-top: 2.5rem; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .steps.grid { grid-template-columns: 1fr; gap: 0; }
-  .hero { --sag: 30px; --sky-h: 150px; padding: calc(var(--sag) + 3rem) 0 calc(var(--sky-h) + 1.5rem); }
+  .hero { --sky-h: 150px; padding: calc(var(--sag) + 3rem) 0 calc(var(--sky-h) + 1.5rem); }
   .hero-text { font-size: 1.15rem; }
   .flags span:nth-child(even) { display: block; }
   .hero-actions { flex-direction: row; justify-content: center; max-width: none; }
@@ -344,9 +339,8 @@ p { margin: 0 0 1em; }
 
 /* Desktop */
 @media (min-width: 900px) {
-  :root { --header-h: 72px; }
-  .logo { font-size: 1.35rem; }
-  .logo-mark { width: 36px; height: 36px; }
+  :root { --header-h: 72px; --sag: 40px; }
+  .logo img { height: 42px; }
   .menu-toggle { display: none; }
   .header-actions { gap: .75rem; }
   .nav { display: flex; position: static; flex-direction: row; gap: .25rem; padding: 0; background: none; border: 0; box-shadow: none; }
@@ -359,7 +353,7 @@ p { margin: 0 0 1em; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
   .steps.grid { grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-  .hero { --sag: 40px; --sky-h: 210px; padding: calc(var(--sag) + 4rem) 0 calc(var(--sky-h) + 1.5rem); min-height: 0; }
+  .hero { --sky-h: 210px; padding: calc(var(--sag) + 4rem) 0 calc(var(--sky-h) + 1.5rem); min-height: 0; }
   .flags span { width: 14px; height: 20px; margin-left: -7px; }
 
   /* Process becomes a horizontal row */
