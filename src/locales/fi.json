@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "SafaSuomi – Ammattimaiset siivouspalvelut",
+    "description": "Luotettavaa koti-, toimisto- ja muuttosiivousta Suomessa. Pyydä ilmainen tarjous jo tänään."
+  },
+  "nav": {
+    "home": "Etusivu",
+    "services": "Palvelut",
+    "about": "Miksi valita meidät",
+    "process": "Näin se toimii",
+    "contact": "Yhteystiedot",
+    "menu": "Avaa valikko",
+    "language": "Kieli"
+  },
+  "hero": {
+    "title": "Puhtaampi tila, kirkkaampi mieli",
+    "subtitle": "Luotettavaa ja ympäristöystävällistä siivousta koteihin ja yrityksille. Me hoidamme siivouksen, jotta sinä voit nauttia vapaa-ajastasi.",
+    "cta": "Pyydä ilmainen tarjous",
+    "secondary": "Palvelumme"
+  },
+  "services": {
+    "title": "Palvelumme",
+    "subtitle": "Joustavia siivousratkaisuja tarpeidesi mukaan.",
+    "items": {
+      "home": {
+        "title": "Kotisiivous",
+        "text": "Säännöllinen tai kertaluonteinen asuntojen ja talojen siivous pölyjen pyyhinnästä keittiöiden ja kylpyhuoneiden perusteelliseen puhdistukseen."
+      },
+      "office": {
+        "title": "Toimistosiivous",
+        "text": "Pidä työpaikkasi siistinä ja viihtyisänä aikatauluun sovitetulla siivouksella, joka sopii yrityksesi aukioloaikoihin."
+      },
+      "moveout": {
+        "title": "Muuttosiivous",
+        "text": "Perusteellinen muuttosiivous, joka täyttää vuokranantajan ja taloyhtiön vaatimukset."
+      },
+      "window": {
+        "title": "Ikkunanpesu",
+        "text": "Raidattomat ikkunat sisältä ja ulkoa koteihin, liikkeisiin ja toimistoihin."
+      },
+      "deep": {
+        "title": "Perussiivous",
+        "text": "Tehokas siivous tiloihin, jotka tarvitsevat erityistä huomiota, myös remontin jälkeen."
+      },
+      "commercial": {
+        "title": "Kiinteistösiivous",
+        "text": "Porrashuoneiden, yleisten tilojen ja yhteisten tilojen siivous taloyhtiöille ja isännöitsijöille."
+      }
+    }
+  },
+  "about": {
+    "title": "Miksi valita SafaSuomi?",
+    "subtitle": "Laatua, johon voit luottaa joka kerta.",
+    "items": {
+      "trusted": {
+        "title": "Luotettavat ammattilaiset",
+        "text": "Kokeneet, taustatarkastetut ja vakuutetut siivoojat."
+      },
+      "eco": {
+        "title": "Ympäristöystävälliset aineet",
+        "text": "Turvallisia perheellesi, lemmikeillesi ja ympäristölle."
+      },
+      "flexible": {
+        "title": "Joustavat aikataulut",
+        "text": "Viikoittain, kahden viikon välein, kuukausittain tai kerran – sinä päätät."
+      },
+      "guarantee": {
+        "title": "Tyytyväisyystakuu",
+        "text": "Etkö ole tyytyväinen? Tulemme uudelleen ja korjaamme asian."
+      }
+    }
+  },
+  "process": {
+    "title": "Näin se toimii",
+    "steps": {
+      "one": {
+        "title": "Ota yhteyttä",
+        "text": "Kerro meille tilastasi ja siivoustarpeistasi."
+      },
+      "two": {
+        "title": "Saat tarjouksen",
+        "text": "Saat selkeän ja reilun hinnan ilman piilokuluja."
+      },
+      "three": {
+        "title": "Me siivoamme",
+        "text": "Tiimimme saapuu ajallaan ja aloittaa työt."
+      },
+      "four": {
+        "title": "Nauti",
+        "text": "Rentoudu moitteettoman puhtaassa ja raikkaassa tilassa."
+      }
+    }
+  },
+  "contact": {
+    "title": "Pyydä ilmainen tarjous",
+    "subtitle": "Lähetä meille viesti, niin otamme sinuun yhteyttä mahdollisimman pian.",
+    "info": {
+      "phone": "Puhelin",
+      "email": "Sähköposti",
+      "address": "Osoite",
+      "hours": "Aukioloajat",
+      "hoursValue": "Ma–Pe 8:00–18:00"
+    },
+    "form": {
+      "name": "Nimesi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelin (valinnainen)",
+      "service": "Palvelu",
+      "servicePlaceholder": "Valitse palvelu",
+      "message": "Viesti",
+      "messagePlaceholder": "Kerro tilasta, sen koosta ja toivomastasi aikataulusta...",
+      "submit": "Lähetä viesti",
+      "sending": "Lähetetään...",
+      "success": "Kiitos! Viestisi on lähetetty. Otamme sinuun pian yhteyttä.",
+      "errorInvalid": "Täytä nimesi, kelvollinen sähköpostiosoite ja viesti.",
+      "errorGeneric": "Viestin lähettämisessä tapahtui virhe. Yritä uudelleen tai ota meihin yhteyttä suoraan."
+    }
+  },
+  "footer": {
+    "tagline": "Ammattimaiset siivouspalvelut Suomessa.",
+    "rights": "Kaikki oikeudet pidätetään."
+  }
+}
