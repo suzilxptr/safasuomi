@@ -1,8 +1,11 @@
+import type { CSSProperties } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const serviceIds = ["home", "office", "moveout", "window", "deep", "commercial"] as const;
+export type ServiceId = (typeof serviceIds)[number];
 
-const icons: Record<(typeof serviceIds)[number], string> = {
+export const serviceIcons: Record<ServiceId, string> = {
   home: "🏠",
   office: "🏢",
   moveout: "📦",
@@ -20,15 +23,17 @@ export default function Services() {
         <p className="section-sub reveal">{t("services.subtitle")}</p>
         <div className="grid grid-3">
           {serviceIds.map((id, i) => (
-            <article
+            <Link
               key={id}
-              className="card reveal"
-              style={{ "--d": `${i * 80}ms` } as React.CSSProperties}
+              to={`/services/${id}`}
+              className="card service-card reveal"
+              style={{ "--d": `${i * 80}ms` } as CSSProperties}
             >
-              <div className="icon" aria-hidden="true">{icons[id]}</div>
+              <div className="icon" aria-hidden="true">{serviceIcons[id]}</div>
               <h3>{t(`services.items.${id}.title`)}</h3>
               <p>{t(`services.items.${id}.text`)}</p>
-            </article>
+              <span className="card-more">{t("services.more")} <span aria-hidden="true">→</span></span>
+            </Link>
           ))}
         </div>
       </div>

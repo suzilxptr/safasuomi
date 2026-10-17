@@ -21,6 +21,7 @@
   "services": {
     "title": "Palvelumme",
     "subtitle": "Joustavia siivousratkaisuja tarpeidesi mukaan.",
+    "more": "Katso mitä sisältyy",
     "items": {
       "home": {
         "title": "Kotisiivous",
@@ -114,6 +115,83 @@
       "success": "Kiitos! Viestisi on lähetetty. Otamme sinuun pian yhteyttä.",
       "errorInvalid": "Täytä nimesi, kelvollinen sähköpostiosoite ja viesti.",
       "errorGeneric": "Viestin lähettämisessä tapahtui virhe. Yritä uudelleen tai ota meihin yhteyttä suoraan."
+    }
+  },
+  "serviceDetail": {
+    "back": "Kaikki palvelut",
+    "includedTitle": "Mitä palveluun sisältyy",
+    "includedSub": "Tyypillinen käynti kattaa alla olevat kohdat. Mukautamme listan tilaasi ja tarpeisiisi.",
+    "extrasTitle": "Lisäpalvelut",
+    "noteTitle": "Hyvä tietää",
+    "contactTitle": "Pyydä tarjous: {{service}}",
+    "contactSub": "Kerro meille tilastasi ja toivomastasi aikataulusta, niin vastaamme selkeällä hinnalla.",
+    "otherTitle": "Muut palvelut",
+    "pages": {
+      "home": {
+        "intro": "Kotisiivouksella asuntosi tai talosi pysyy raikkaana, hygieenisenä ja viihtyisänä – säännöllisesti tai kertakäyntinä.",
+        "areas": [
+          { "title": "Keittiö", "items": ["Työtasot, liesi, tiskiallas ja hanat puhdistetaan", "Kaapistojen ovet ja kodinkoneiden ulkopinnat pyyhitään", "Mikroaaltouuni puhdistetaan sisältä ja ulkoa", "Lattia imuroidaan ja pestään", "Roskakorit tyhjennetään"] },
+          { "title": "Kylpyhuone ja wc", "items": ["Suihku, kylpyamme, pesuallas ja hanat puhdistetaan ja kiillotetaan", "Wc-istuin pestään sisältä ja ulkoa", "Peilit ja laatat pyyhitään", "Lattia pestään"] },
+          { "title": "Olohuone ja makuuhuoneet", "items": ["Tasot, hyllyt ja huonekalut pölytetään", "Jalkalistat ja ovenkarmit pyyhitään", "Lattiat imuroidaan tai pestään", "Peilit ja lasipinnat pyyhitään"] },
+          { "title": "Eteinen", "items": ["Kenkäalue siistitään ja lattia puhdistetaan", "Ovenkahvat ja valokatkaisimet pyyhitään"] }
+        ],
+        "extras": ["Uunin puhdistus sisältä", "Jääkaapin puhdistus sisältä", "Ikkunoiden pesu sisäpuolelta", "Silitys", "Parvekkeen siivous"],
+        "note": "Säännölliset käynnit onnistuvat viikoittain, kahden viikon välein tai kuukausittain. Tuomme mukanamme omat välineet ja ympäristöystävälliset puhdistusaineet."
+      },
+      "office": {
+        "intro": "Säännöllinen toimistosiivous pitää työpaikan siistinä, hygieenisenä ja viihtyisänä sekä henkilöstölle että vieraille.",
+        "areas": [
+          { "title": "Työpisteet ja neuvotteluhuoneet", "items": ["Työpöydät ja näkyvät pinnat pyyhitään (paperit jäävät paikoilleen)", "Neuvotteluhuoneiden pöydät ja tuolit puhdistetaan", "Hyllyt, ikkunalaudat ja laitteiden ulkopinnat pölytetään", "Roskakorit ja kierrätysastiat tyhjennetään"] },
+          { "title": "Keittiöt ja taukotilat", "items": ["Työtasot, tiskiallas ja liesi puhdistetaan", "Mikroaaltouunin, jääkaapin ja kahvinkeittimen ulkopinnat pyyhitään", "Pöydät ja tuolit pyyhitään", "Lattiat imuroidaan ja pestään"] },
+          { "title": "Wc-tilat", "items": ["Wc-istuimet, pesualtaat ja peilit puhdistetaan ja desinfioidaan", "Lattiat pestään", "Saippuat, paperit ja muut tarvikkeet täydennetään"] },
+          { "title": "Sisäänkäynti ja yleiset tilat", "items": ["Vastaanotto ja käytävät imuroidaan ja pestään", "Lasiovet ja ovenkahvat pyyhitään", "Ovenkahvat, valokatkaisimet ja hissin painikkeet desinfioidaan"] }
+        ],
+        "extras": ["Mattojen syväpuhdistus", "Ikkunoiden pesu sisäpuolelta", "Jääkaapin ja mikroaaltouunin sisäpuolen puhdistus", "Sälekaihtimien puhdistus"],
+        "note": "Siivoamme aukioloaikojen ulkopuolella, aamulla tai illalla, jotta työrauha säilyy. Käynnit voivat olla päivittäin, viikoittain tai muun sopivan aikataulun mukaan."
+      },
+      "moveout": {
+        "intro": "Perusteellinen muuttosiivous, joka täyttää vuokranantajan ja taloyhtiön vaatimukset, jotta voit luovuttaa avaimet huolettomin mielin.",
+        "areas": [
+          { "title": "Keittiö", "items": ["Kaapit puhdistetaan sisältä ja ulkoa", "Uuni puhdistetaan sisältä, myös pellit ja ritilät", "Jääkaappi ja pakastin puhdistetaan sisältä (tyhjennettynä ja sulatettuna)", "Liesi, liesituuletin ja suodatin puhdistetaan", "Tiskiallas, hanat ja työtasot puhdistetaan"] },
+          { "title": "Kylpyhuone ja sauna", "items": ["Laatat, saumat ja suihkuseinät puhdistetaan", "Lattiakaivo puhdistetaan", "Wc-istuin, pesuallas ja peilit puhdistetaan", "Saunan lauteet, seinät ja lattia pestään"] },
+          { "title": "Huoneet ja säilytystilat", "items": ["Vaatekaapit ja hyllyt puhdistetaan sisältä", "Ovet, ovenkarmit, valokatkaisimet ja patterit pyyhitään", "Jalkalistat pyyhitään", "Lattiat imuroidaan ja pestään"] },
+          { "title": "Ikkunat ja parveke", "items": ["Ikkunat pestään sisältä ja ulkoa, kun ne ovat turvallisesti saavutettavissa", "Ikkunankarmit ja -laudat pyyhitään", "Parveke tai terassi lakaistaan ja pestään"] }
+        ],
+        "extras": ["Seinien pesu", "Varastotilojen ja autotallin siivous", "Mattojen pesu"],
+        "note": "Tyhjennä asunto ja sulata jääkaappi-pakastin ennen siivousta. Jos vuokranantajan tai taloyhtiön tarkastuksessa löytyy puutteita, tulemme korjaamaan ne."
+      },
+      "window": {
+        "intro": "Raidattomat, kirkkaat ikkunat koteihin, liikkeisiin ja toimistoihin – sisältä ja ulkoa.",
+        "areas": [
+          { "title": "Ikkunat", "items": ["Lasit pestään sisä- ja ulkopuolelta", "Karmit ja ikkunalaudat pyyhitään", "Avattavat ikkunat pestään myös lasien välistä, kun se on mahdollista", "Raidaton lopputulos ammattivälineillä"] },
+          { "title": "Ovet ja lasipinnat", "items": ["Lasiovet ja lasitetut parvekkeet", "Liikkeiden näyteikkunat", "Sisätilojen lasiseinät"] },
+          { "title": "Vaikeasti tavoitettavat lasit", "items": ["Kattoikkunat ja korkealla olevat ikkunat jatkovarsilla", "Porrashuoneiden ja atriumien ikkunat (kun ne ovat turvallisesti saavutettavissa)"] }
+        ],
+        "extras": ["Hyönteisverkkojen puhdistus", "Sälekaihtimien puhdistus", "Lasitetun parvekkeen pesu", "Säännöllinen kausi- tai kuukausiaikataulu"],
+        "note": "Kodeissa ikkunat kannattaa pestä keväisin ja syksyisin, liikkeissä ja toimistoissa usein kerran kuussa. Ulkopuolen työt riippuvat säästä, joten sateella tai pakkasella aikaa voidaan siirtää."
+      },
+      "deep": {
+        "intro": "Perussiivous menee tavallista siivousta syvemmälle: se poistaa kertyneen rasvan, kalkin ja pölyn. Se sopii erinomaisesti remontin jälkeen, ennen muuttoa tai aina kun tila kaipaa uutta alkua.",
+        "areas": [
+          { "title": "Keittiö", "items": ["Liesi, liesituuletin ja kaapistojen ovet puhdistetaan rasvasta", "Uuni, jääkaappi ja pakastin puhdistetaan sisältä", "Laatat ja saumat harjataan", "Tiskialtaan ja hanojen kalkki poistetaan ja pinnat kiillotetaan"] },
+          { "title": "Kylpyhuone ja sauna", "items": ["Kalkki ja saippuakerrokset poistetaan", "Saumat ja silikoniliitokset harjataan", "Suihku, kylpyamme ja hanat kiillotetaan", "Lattiakaivo puhdistetaan"] },
+          { "title": "Koko koti", "items": ["Ovet, karmit, jalkalistat ja patterit pestään", "Valaisimet ja katon rajat pölytetään", "Ikkunat pestään sisäpuolelta", "Lattiat imuroidaan ja pestään perusteellisesti"] },
+          { "title": "Remontin jälkeen", "items": ["Rakennuspöly poistetaan kaikilta pinnoilta", "Maali- ja rappausroiskeet poistetaan laseista ja laatoista", "Pistorasiat, katkaisimet ja kalusteet pyyhitään", "Kaappien ja laatikoiden sisäpuolet puhdistetaan"] }
+        ],
+        "extras": ["Mattojen ja verhoilujen puhdistus", "Seinien ja katon pesu", "Varastotilojen siivous", "Parvekkeen siivous"],
+        "note": "Perussiivous kestää tavallista siivousta pidempään, joten tarjous perustuu yleensä tilan kokoon ja kuntoon. Valokuvat auttavat meitä antamaan tarkan hinnan."
+      },
+      "commercial": {
+        "intro": "Kiinteistösiivous taloyhtiöille, isännöitsijöille ja yrityksille: yhteiset tilat pidetään siisteinä, turvallisina ja viihtyisinä asukkaille ja vieraille.",
+        "areas": [
+          { "title": "Porrashuoneet ja sisäänkäynnit", "items": ["Portaat, tasanteet ja kaiteet puhdistetaan", "Ulko-ovet, lasit ja matot puhdistetaan", "Lattiat imuroidaan ja pestään", "Ilmoitustaulut ja postilaatikot pyyhitään"] },
+          { "title": "Hissit", "items": ["Lattiat, seinät ja peilit puhdistetaan", "Painikkeet ja kahvat desinfioidaan"] },
+          { "title": "Yhteiset tilat", "items": ["Pesula- ja kuivaushuoneet", "Sauna- ja kuntosalitilat", "Pyörä- ja lastenvaunuvarastot lakaistaan", "Jätehuoneet ja katokset pestään"] },
+          { "title": "Kausityöt", "items": ["Yhteisten tilojen kausittainen perussiivous", "Porrashuoneiden ikkunoiden pesu", "Talvihiekan ja lian poisto sisäänkäynneiltä"] }
+        ],
+        "extras": ["Autotallien ja varastotilojen siivous", "Pihan ja sisäänkäyntien lakaisu", "Mattojen puhdistus"],
+        "note": "Sovimme siivoussuunnitelman ja aikataulun isännöitsijän tai taloyhtiön hallituksen kanssa, jotta kaikki tietävät mitä tehdään ja milloin."
+      }
     }
   },
   "footer": {

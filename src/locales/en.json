@@ -21,6 +21,7 @@
   "services": {
     "title": "Our services",
     "subtitle": "Flexible cleaning solutions tailored to your needs.",
+    "more": "See what's included",
     "items": {
       "home": {
         "title": "Home cleaning",
@@ -114,6 +115,83 @@
       "success": "Thank you! Your message has been sent. We will contact you soon.",
       "errorInvalid": "Please fill in your name, a valid email address and a message.",
       "errorGeneric": "Something went wrong while sending your message. Please try again or contact us directly."
+    }
+  },
+  "serviceDetail": {
+    "back": "All services",
+    "includedTitle": "What's included",
+    "includedSub": "A typical visit covers the points below. We adjust the list to your space and needs.",
+    "extrasTitle": "Optional extras",
+    "noteTitle": "Good to know",
+    "contactTitle": "Request a quote: {{service}}",
+    "contactSub": "Tell us about your space and preferred schedule and we will reply with a clear price.",
+    "otherTitle": "Other services",
+    "pages": {
+      "home": {
+        "intro": "Our home cleaning keeps your apartment or house fresh, hygienic and comfortable, as a regular service or a one-off visit.",
+        "areas": [
+          { "title": "Kitchen", "items": ["Worktops, hob, sink and taps cleaned", "Cabinet fronts and appliance exteriors wiped", "Microwave cleaned inside and out", "Floor vacuumed and mopped", "Rubbish bins emptied"] },
+          { "title": "Bathroom and toilet", "items": ["Shower, bath, sink and taps cleaned and polished", "Toilet cleaned inside and out", "Mirrors and tiles wiped", "Floor washed"] },
+          { "title": "Living areas and bedrooms", "items": ["Surfaces, shelves and furniture dusted", "Skirting boards and door frames wiped", "Floors vacuumed or washed", "Mirrors and glass surfaces wiped"] },
+          { "title": "Entrance hall", "items": ["Shoe area tidied and floor cleaned", "Door handles and light switches wiped"] }
+        ],
+        "extras": ["Oven cleaned inside", "Fridge cleaned inside", "Windows cleaned from the inside", "Ironing", "Balcony cleaning"],
+        "note": "Regular visits are available weekly, every two weeks or monthly. We bring our own equipment and eco-friendly cleaning products."
+      },
+      "office": {
+        "intro": "Scheduled office cleaning keeps your workplace tidy, hygienic and welcoming for your team and your visitors.",
+        "areas": [
+          { "title": "Workspaces and meeting rooms", "items": ["Desks and visible surfaces wiped (papers are left where they are)", "Meeting room tables and chairs cleaned", "Shelves, window sills and equipment exteriors dusted", "Rubbish and recycling bins emptied"] },
+          { "title": "Kitchens and break rooms", "items": ["Worktops, sink and hob cleaned", "Microwave, fridge and coffee machine exteriors wiped", "Tables and chairs wiped", "Floors vacuumed and mopped"] },
+          { "title": "Washrooms", "items": ["Toilets, sinks and mirrors cleaned and disinfected", "Floors washed", "Soap, paper and other supplies refilled"] },
+          { "title": "Entrance and common areas", "items": ["Reception and corridors vacuumed and mopped", "Glass doors and handles wiped", "Door handles, light switches and lift buttons disinfected"] }
+        ],
+        "extras": ["Carpet deep cleaning", "Interior window cleaning", "Fridge and microwave cleaned inside", "Blinds cleaning"],
+        "note": "We clean outside your business hours, early in the morning or in the evening, so your team is never disturbed. Visits can be daily, weekly or on any schedule that suits you."
+      },
+      "moveout": {
+        "intro": "A thorough end-of-tenancy clean that meets the requirements of landlords and housing companies, so you can hand over the keys with confidence.",
+        "areas": [
+          { "title": "Kitchen", "items": ["Cabinets cleaned inside and out", "Oven cleaned inside, including trays and racks", "Fridge and freezer cleaned inside (emptied and defrosted by you)", "Hob, extractor hood and filter cleaned", "Sink, taps and worktops cleaned"] },
+          { "title": "Bathroom and sauna", "items": ["Tiles, grout and shower walls cleaned", "Floor drain cleaned", "Toilet, sink and mirrors cleaned", "Sauna benches, walls and floor washed"] },
+          { "title": "Rooms and storage", "items": ["Wardrobes and shelves cleaned inside", "Doors, door frames, light switches and radiators wiped", "Skirting boards wiped", "Floors vacuumed and washed"] },
+          { "title": "Windows and balcony", "items": ["Windows washed inside and out where safely accessible", "Window frames and sills wiped", "Balcony or patio swept and washed"] }
+        ],
+        "extras": ["Wall washing", "Storage room and garage cleaning", "Carpet washing"],
+        "note": "Before we arrive, please empty the home and defrost the fridge-freezer. If the landlord's or housing company's inspection finds something we missed, we come back and put it right."
+      },
+      "window": {
+        "intro": "Streak-free, sparkling windows for homes, shops and offices, inside and out.",
+        "areas": [
+          { "title": "Windows", "items": ["Glass cleaned inside and outside", "Frames and sills wiped", "Openable windows cleaned between the panes where possible", "Streak-free finish with professional tools"] },
+          { "title": "Doors and glazing", "items": ["Glass doors and glazed balconies", "Shop fronts and display windows", "Interior glass partitions"] },
+          { "title": "Hard-to-reach glass", "items": ["Skylights and high windows with extension poles", "Stairwell and atrium windows (where safely accessible)"] }
+        ],
+        "extras": ["Window screen and mesh cleaning", "Blinds cleaning", "Glazed balcony cleaning", "Regular seasonal or monthly schedule"],
+        "note": "Most homes benefit from window cleaning in spring and autumn; shops and offices often prefer a monthly visit. Outdoor work depends on the weather, so we may reschedule in rain or frost."
+      },
+      "deep": {
+        "intro": "Deep cleaning goes well beyond a regular clean. It tackles built-up grease, limescale and dust, which makes it ideal after a renovation, before moving in, or whenever a space needs a fresh start.",
+        "areas": [
+          { "title": "Kitchen", "items": ["Hob, extractor hood and cabinet fronts degreased", "Oven, fridge and freezer cleaned inside", "Tiles and grout scrubbed", "Sink and taps descaled and polished"] },
+          { "title": "Bathroom and sauna", "items": ["Limescale and soap scum removed", "Grout and silicone joints scrubbed", "Shower, bath and fixtures polished", "Floor drain cleaned"] },
+          { "title": "Throughout the home", "items": ["Doors, frames, skirting boards and radiators washed", "Light fixtures and ceiling corners dusted", "Windows cleaned from the inside", "Floors vacuumed and thoroughly washed"] },
+          { "title": "After renovation", "items": ["Construction dust removed from all surfaces", "Paint and plaster splashes removed from glass and tiles", "Sockets, switches and fixtures wiped", "Inside of cupboards and drawers cleaned"] }
+        ],
+        "extras": ["Carpet and upholstery cleaning", "Wall and ceiling washing", "Storage room cleaning", "Balcony cleaning"],
+        "note": "A deep clean takes longer than a regular visit, so we usually quote based on the size and condition of the space. Photos help us give a precise price."
+      },
+      "commercial": {
+        "intro": "Property cleaning for housing companies, property managers and businesses: shared areas kept clean, safe and welcoming for residents and visitors.",
+        "areas": [
+          { "title": "Stairwells and entrances", "items": ["Stairs, landings and handrails cleaned", "Entrance doors, glass and mats cleaned", "Floors vacuumed and mopped", "Notice boards and mailboxes wiped"] },
+          { "title": "Lifts", "items": ["Floors, walls and mirrors cleaned", "Buttons and handles disinfected"] },
+          { "title": "Shared facilities", "items": ["Laundry and drying rooms", "Sauna and gym areas", "Bicycle and pram rooms swept", "Waste rooms and bin shelters washed"] },
+          { "title": "Seasonal work", "items": ["Seasonal deep cleaning of shared areas", "Stairwell window cleaning", "Winter sand and dirt removed from entrances"] }
+        ],
+        "extras": ["Garage and storage area cleaning", "Courtyard and entrance sweeping", "Carpet and mat cleaning"],
+        "note": "We agree a cleaning plan and schedule with the property manager or housing company board, so everyone knows what is done and when."
+      }
     }
   },
   "footer": {

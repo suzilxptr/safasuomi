@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
-// Adds `.in` to every `.reveal` element once it scrolls into view.
-export function useReveal() {
+// Adds `.in` to every `.reveal` element once it scrolls into view; re-runs when `key` changes (route change).
+export function useReveal(key: string) {
   useEffect(() => {
     const els = document.querySelectorAll<HTMLElement>(".reveal");
     if (!("IntersectionObserver" in window)) {
@@ -21,5 +21,5 @@ export function useReveal() {
     );
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();
-  }, []);
+  }, [key]);
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState, type CSSProperties } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { languages, type Language } from "../i18n";
 import { company } from "../config";
@@ -35,21 +36,21 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="#home" className="logo" onClick={() => setOpen(false)}>
+        <Link to="/" className="logo" onClick={() => setOpen(false)}>
           <img src="/logo.png" alt={company.name} width="720" height="286" />
-        </a>
+        </Link>
 
         <nav id="main-nav" className={`nav ${open ? "nav-open" : ""}`} aria-label="Main">
           <div className="nav-links">
             {links.map((l, i) => (
-              <a
+              <Link
                 key={l.id}
-                href={`#${l.id}`}
+                to={`/#${l.id}`}
                 style={{ "--i": i } as CSSProperties}
                 onClick={() => setOpen(false)}
               >
                 {t(l.key)}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>

@@ -1,24 +1,25 @@
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import About from "./components/About";
-import Process from "./components/Process";
-import Contact from "./components/Contact";
+import Home from "./components/Home";
+import ServiceDetail from "./components/ServiceDetail";
+import ScrollManager from "./components/ScrollManager";
 import Footer from "./components/Footer";
 import { useReveal } from "./useReveal";
 
 export default function App() {
-  useReveal();
+  const { pathname } = useLocation();
+  useReveal(pathname);
   return (
     <>
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <About />
-        <Process />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services/:id" element={<ServiceDetail />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
       </main>
+      <ScrollManager />
       <Footer />
     </>
   );
