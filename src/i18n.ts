@@ -17,7 +17,8 @@ i18n
     nonExplicitSupportedLngs: true,
     load: "languageOnly",
     interpolation: { escapeValue: false },
-    detection: { order: ["localStorage", "navigator"], caches: ["localStorage"] },
+    // Finnish unless the visitor picked a language; new key ignores values auto-cached from browser language.
+    detection: { order: ["localStorage"], lookupLocalStorage: "safasuomi-lang", caches: ["localStorage"] },
   });
 
 const syncDocument = (lng: string) => {
