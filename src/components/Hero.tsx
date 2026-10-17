@@ -39,38 +39,6 @@ export default function Hero() {
         })}
       </div>
 
-      <svg className="skyline" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-        <defs>
-          <pattern id="pines-far" width="88" height="70" y="165" patternUnits="userSpaceOnUse">
-            <g fill="#6f9bb8" opacity=".55">
-              <path d="M22 0 33 22H27L37 42H30L40 62H4L14 42H7L17 22H11Z" />
-              <path transform="translate(47 10) scale(.85)" d="M22 0 33 22H27L37 42H30L40 62H4L14 42H7L17 22H11Z" />
-            </g>
-          </pattern>
-          <pattern id="pines-near" width="88" height="70" y="182" patternUnits="userSpaceOnUse">
-            <g fill="#fff">
-              <path d="M22 8 33 30H27L37 50H30L40 70H4L14 50H7L17 30H11Z" />
-              <path transform="translate(50 14) scale(.8)" d="M22 8 33 30H27L37 50H30L40 70H4L14 50H7L17 30H11Z" />
-            </g>
-          </pattern>
-        </defs>
-
-        {/* Himalayan peaks with snow caps */}
-        <path
-          fill="#1c4566"
-          d="M0 240V180L120 110 190 150 300 50 400 140 470 100 560 160 640 90 720 150 800 120 900 170 1000 130 1100 160 1200 100 1300 150 1440 120V240Z"
-        />
-        <path
-          fill="#fff"
-          opacity=".9"
-          d="M300 50 267 80 283 76 300 90 316 76 333 80ZM640 90 611 115 626 111 640 124 655 111 673 115ZM1200 100 1158 125 1178 120 1200 136 1222 120 1250 125Z"
-        />
-        {/* Finnish pine forest */}
-        <rect x="0" y="165" width="1440" height="75" fill="url(#pines-far)" />
-        <rect x="0" y="182" width="1440" height="58" fill="url(#pines-near)" />
-        <rect x="0" y="236" width="1440" height="4" fill="#fff" />
-      </svg>
-
       <div className="container hero-inner">
         <h1>{t("hero.title")}</h1>
         <p className="hero-text">{t("hero.subtitle")}</p>

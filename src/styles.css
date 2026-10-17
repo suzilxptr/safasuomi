@@ -131,10 +131,9 @@ p { margin: 0 0 1em; }
 
 /* Hero */
 .hero {
-  --sky-h: clamp(110px, 22svh, 170px);
   position: relative; overflow: hidden; isolation: isolate;
   color: #fff; text-align: center;
-  padding: calc(var(--sag) + 2rem) 0 calc(var(--sky-h) + 1rem);
+  padding: calc(var(--sag) + 2rem) 0 3rem;
   min-height: calc(100vh - var(--header-h) - env(safe-area-inset-top) - 1px);
   min-height: calc(100svh - var(--header-h) - env(safe-area-inset-top) - 1px);
   display: flex; align-items: center;
@@ -181,10 +180,6 @@ p { margin: 0 0 1em; }
   opacity: .9; transform-origin: top center; animation: sway 3.4s ease-in-out infinite alternate;
 }
 .flags span:nth-child(even) { display: none; }
-
-/* Himalayan peaks and Finnish pines, fading into the page */
-.hero::after { content: ""; position: absolute; z-index: -1; left: 0; right: 0; bottom: -1px; height: 3px; background: #fff; }
-.skyline { position: absolute; z-index: -1; left: 0; bottom: -1px; width: 100%; height: var(--sky-h); display: block; }
 
 .bubbles { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
 .bubbles span {
@@ -314,7 +309,7 @@ p { margin: 0 0 1em; }
 
 /* Short phones (e.g. iPhone SE): keep the hero within one screen */
 @media (max-width: 599px) and (max-height: 700px) {
-  .hero { --sky-h: 96px; padding-top: calc(var(--sag) + 1.1rem); padding-bottom: calc(var(--sky-h) + .5rem); }
+  .hero { padding-top: calc(var(--sag) + 1.1rem); padding-bottom: 1.5rem; }
   .hero h1 { font-size: clamp(1.8rem, 8.2vw, 2.3rem); margin-bottom: .35em; }
   .hero-text { font-size: .93rem; margin-bottom: 1.1rem; }
   .hero-actions { gap: .55rem; }
@@ -337,7 +332,7 @@ p { margin: 0 0 1em; }
   .grid { gap: 1.25rem; margin-top: 2.5rem; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .steps.grid { grid-template-columns: 1fr; gap: 0; }
-  .hero { --sky-h: 150px; padding: calc(var(--sag) + 3rem) 0 calc(var(--sky-h) + 1.5rem); }
+  .hero { padding: calc(var(--sag) + 3rem) 0 4rem; }
   .hero-text { font-size: 1.15rem; }
   .flags span:nth-child(even) { display: block; }
   .hero-actions { flex-direction: row; justify-content: center; max-width: none; }
@@ -376,7 +371,7 @@ p { margin: 0 0 1em; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(4, 1fr); }
   .steps.grid { grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-  .hero { --sky-h: 210px; padding: calc(var(--sag) + 4rem) 0 calc(var(--sky-h) + 1.5rem); min-height: 0; }
+  .hero { padding: calc(var(--sag) + 4rem) 0 6rem; min-height: 0; }
   .flags span { width: 14px; height: 20px; margin-left: -7px; }
 
   /* Process becomes a horizontal row */
